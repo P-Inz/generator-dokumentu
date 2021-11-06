@@ -61,7 +61,15 @@ RUN cd ~ \
 	&& tlmgr install varwidth \
 	&& tlmgr install pgf \
 	&& tlmgr install cleveref \
+	&& tlmgr install standalone \
+	&& tlmgr install currfile \
+	&& tlmgr install gincltex \
+	&& tlmgr install filemod \
 	&& tlmgr install todonotes
+	
+RUN tlmgr install svn-prov
+RUN tlmgr install adjustbox
+RUN tlmgr install collectbox
 	
 	
 

@@ -58,6 +58,12 @@ RUN cd ~ \
 	&& tlmgr install listings \
 	&& tlmgr install tocbibind \
 	&& tlmgr install tabu
+	
+	
+RUN cd ~ \
+	&& tlmgr install varwidth
+	
+	
 
 #RUN mkdir -p /usr/src/scripts
 #RUN mkdir -p /usr/src/output

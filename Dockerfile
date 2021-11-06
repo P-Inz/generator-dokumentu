@@ -55,7 +55,9 @@ RUN cd ~ \
 	&& tlmgr init-usertree \
 	&& tlmgr option repository https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2020/tlnet-final \
 	&& tlmgr update --self \
-	&& tlmgr install listings
+	&& tlmgr install listings \
+	&& tlmgr install tocbibind \
+	&& tlmgr install tabu
 
 #RUN mkdir -p /usr/src/scripts
 #RUN mkdir -p /usr/src/output

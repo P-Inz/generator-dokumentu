@@ -50,19 +50,19 @@ RUN apt-get update \
 #	&& apt-get clean \
 #	&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+RUN cd ~ \
+	&& mkdir ~/texmf \
+	&& tlmgr init-usertree \
+	&& tlmgr option repository https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2020/tlnet-final \
+	&& tlmgr update --self \
+	&& tlmgr install listings
 
 #RUN mkdir -p /usr/src/scripts
 #RUN mkdir -p /usr/src/output
 #RUN mkdir -p /usr/src/data
 
 
-#RUN cd ~; \
-#	mkdir ~/texmf; \
-#	tlmgr init-usertree; \
-#	tlmgr option repository ftp://tug.org/historic/systems/texlive/2015/tlnet-final \
-#	tlmgr update;
-#
-#RUN tlmgr install listings
+
 #
 #COPY ./scripts/ /usr/src/scripts
 #

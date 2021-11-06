@@ -57,11 +57,11 @@ RUN cd ~ \
 	&& tlmgr update --self \
 	&& tlmgr install listings \
 	&& tlmgr install tocbibind \
-	&& tlmgr install tabu
-	
-	
-RUN cd ~ \
-	&& tlmgr install varwidth
+	&& tlmgr install tabu \
+	&& tlmgr install varwidth \
+	&& tlmgr install pgf \
+	&& tlmgr install cleveref \
+	&& tlmgr install todonotes
 	
 	
 

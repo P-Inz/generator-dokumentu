@@ -40,7 +40,7 @@ RUN apt-get update \
 #	&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN apt-get update \
-	&& DEBIAN_FRONTEND="noninteractive" apt-get install -y xzdec \
+	&& DEBIAN_FRONTEND="noninteractive" apt-get install -y xzdec xz-utils \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 

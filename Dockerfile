@@ -70,6 +70,11 @@ RUN cd ~ \
 RUN tlmgr install svn-prov
 RUN tlmgr install adjustbox
 RUN tlmgr install collectbox
+RUN tlmgr install csquotes
+RUN tlmgr install newtx
+RUN tlmgr install fontaxes
+RUN tlmgr install xstring
+RUN tlmgr install titlesec
 	
 	
 

@@ -76,6 +76,7 @@ RUN tlmgr install fontaxes
 RUN tlmgr install xstring
 RUN tlmgr install titlesec
 RUN tlmgr install lipsum
+RUN tlmgr install apacite
 	
 	
 

@@ -54,19 +54,19 @@ RUN cd ~ \
 	&& mkdir ~/texmf \
 	&& tlmgr init-usertree \
 	&& tlmgr option repository https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2020/tlnet-final \
-	&& tlmgr update --self \
-	&& tlmgr install listings \
-	&& tlmgr install tocbibind \
-	&& tlmgr install tabu \
-	&& tlmgr install varwidth \
-	&& tlmgr install pgf \
-	&& tlmgr install cleveref \
-	&& tlmgr install standalone \
-	&& tlmgr install currfile \
-	&& tlmgr install gincltex \
-	&& tlmgr install filemod \
-	&& tlmgr install todonotes
+	&& tlmgr update --self
 	
+RUN tlmgr install listings
+RUN tlmgr install tocbibind
+RUN tlmgr install tabu
+RUN tlmgr install varwidth
+RUN tlmgr install pgf
+RUN tlmgr install cleveref
+RUN tlmgr install standalone
+RUN tlmgr install currfile
+RUN tlmgr install gincltex
+RUN tlmgr install filemod
+RUN tlmgr install todonotes
 RUN tlmgr install svn-prov
 RUN tlmgr install adjustbox
 RUN tlmgr install collectbox

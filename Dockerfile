@@ -75,6 +75,7 @@ RUN tlmgr install newtx
 RUN tlmgr install fontaxes
 RUN tlmgr install xstring
 RUN tlmgr install titlesec
+RUN tlmgr install lipsum
 	
 	
 

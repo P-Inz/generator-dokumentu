@@ -77,6 +77,7 @@ RUN tlmgr install xstring
 RUN tlmgr install titlesec
 RUN tlmgr install lipsum
 RUN tlmgr install IEEEtran
+RUN tlmgr install tocloft
 	
 	
 

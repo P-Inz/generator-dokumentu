@@ -56,28 +56,33 @@ RUN cd ~ \
 	&& tlmgr option repository https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2020/tlnet-final \
 	&& tlmgr update --self
 	
-RUN tlmgr install listings
-RUN tlmgr install tocbibind
-RUN tlmgr install tabu
-RUN tlmgr install varwidth
-RUN tlmgr install pgf
-RUN tlmgr install cleveref
-RUN tlmgr install standalone
-RUN tlmgr install currfile
-RUN tlmgr install gincltex
-RUN tlmgr install filemod
-RUN tlmgr install todonotes
-RUN tlmgr install svn-prov
-RUN tlmgr install adjustbox
-RUN tlmgr install collectbox
-RUN tlmgr install csquotes
-RUN tlmgr install newtx
-RUN tlmgr install fontaxes
-RUN tlmgr install xstring
-RUN tlmgr install titlesec
-RUN tlmgr install lipsum
-RUN tlmgr install IEEEtran
-RUN tlmgr install tocloft
+RUN mkdir -p MKDIR /root/texmf/tex/latex/commonstuff/
+COPY ./pkgs/tikz-uml.sty  /root/texmf/tex/latex/commonstuff/tikz-uml.sty
+
+RUN tlmgr install listings \
+	&& tlmgr install tocbibind \
+	&& tlmgr install tabu \
+	&& tlmgr install varwidth \
+	&& tlmgr install pgf \
+	&& tlmgr install cleveref \
+	&& tlmgr install standalone \
+	&& tlmgr install currfile \
+	&& tlmgr install gincltex \
+	&& tlmgr install filemod \
+	&& tlmgr install todonotes \
+	&& tlmgr install svn-prov \
+	&& tlmgr install adjustbox \
+	&& tlmgr install collectbox \
+	&& tlmgr install csquotes \
+	&& tlmgr install newtx \
+	&& tlmgr install fontaxes \
+	&& tlmgr install xstring \
+	&& tlmgr install titlesec \
+	&& tlmgr install lipsum \
+	&& tlmgr install IEEEtran \
+	&& tlmgr install tocloft \
+    && tlmgr install pgfopts
+   
 	
 	
 

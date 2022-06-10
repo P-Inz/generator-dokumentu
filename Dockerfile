@@ -81,9 +81,10 @@ RUN tlmgr install listings \
 	&& tlmgr install lipsum \
 	&& tlmgr install tocloft \
     && tlmgr install pgfopts \
-    && tlmgr install enumitem \
+    && tlmgr install enumitem
     
 #RUN tlmgr install IEEEtran
+COPY ./pkgs/IEEEtran.r51065  /root/texmf
 	
 
 #RUN mkdir -p /usr/src/scripts

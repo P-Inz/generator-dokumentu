@@ -1,0 +1,26 @@
+name IEEEtran
+category Package
+revision 51065
+shortdesc Document class for IEEE Transactions journals and conferences
+relocated 1
+longdesc The class and its BibTeX style enable authors to produce
+longdesc officially-correct output for the Institute of Electrical and
+longdesc Electronics Engineers (IEEE) transactions, journals and
+longdesc conferences.
+runfiles size=205
+ RELOC/bibtex/bib/IEEEtran/IEEEabrv.bib
+ RELOC/bibtex/bib/IEEEtran/IEEEexample.bib
+ RELOC/bibtex/bib/IEEEtran/IEEEfull.bib
+ RELOC/bibtex/bst/IEEEtran/IEEEtran.bst
+ RELOC/bibtex/bst/IEEEtran/IEEEtranN.bst
+ RELOC/bibtex/bst/IEEEtran/IEEEtranS.bst
+ RELOC/bibtex/bst/IEEEtran/IEEEtranSA.bst
+ RELOC/bibtex/bst/IEEEtran/IEEEtranSN.bst
+ RELOC/tex/latex/IEEEtran/IEEEtran.cls
+ RELOC/tex/latex/IEEEtran/IEEEtrantools.sty
+catalogue-contact-home http://www.michaelshell.org/tex/ieeetran/
+catalogue-ctan /macros/latex/contrib/IEEEtran
+catalogue-date 2017-04-18 05:31:40 +0200
+catalogue-license lppl1.3
+catalogue-topics journalpub class
+catalogue-version 1.8b

@@ -53,7 +53,7 @@ RUN apt-get update \
 RUN cd ~ \
 	&& mkdir ~/texmf \
 	&& tlmgr init-usertree \
-	&& tlmgr option repository https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2020/tlnet-final \
+	&& tlmgr option repository https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2021/tlnet-final \
 	&& tlmgr update --self
 	
 RUN mkdir -p MKDIR /root/texmf/tex/latex/commonstuff/

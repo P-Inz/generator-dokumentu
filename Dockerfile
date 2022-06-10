@@ -85,7 +85,15 @@ RUN tlmgr install listings \
     
 #RUN tlmgr install IEEEtran
 COPY ./pkgs/IEEEtran.r51065  /root/texmf
-	
+
+#RUN tlmgr install binhex
+COPY ./pkgs/kastrup  /root/kastrup
+
+RUN cd /root/kastrup \
+	&& latex binhex.ins \
+	&& mkdir /root/texmf/tex/plain/binhex \
+	&& cp binhex.tex /root/texmf/tex/plain/binhex/ \
+	&& texhash
 
 #RUN mkdir -p /usr/src/scripts
 #RUN mkdir -p /usr/src/output

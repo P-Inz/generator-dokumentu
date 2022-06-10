@@ -83,6 +83,7 @@ RUN tlmgr install listings \
 	&& tlmgr install tocloft \
     && tlmgr install pgfopts
    
+RUN tlmgr install enumitem
 	
 	
 

@@ -79,12 +79,11 @@ RUN tlmgr install listings \
 	&& tlmgr install xstring \
 	&& tlmgr install titlesec \
 	&& tlmgr install lipsum \
-	&& tlmgr install IEEEtran \
 	&& tlmgr install tocloft \
-    && tlmgr install pgfopts
-   
-RUN tlmgr install enumitem
-	
+    && tlmgr install pgfopts \
+    && tlmgr install enumitem \
+    
+#RUN tlmgr install IEEEtran
 	
 
 #RUN mkdir -p /usr/src/scripts
